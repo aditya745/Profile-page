@@ -35,9 +35,7 @@ class Comment extends Component {
             name="comment"
             required
           />
-          <button className="button" disabled={!this.state.term}>
-            Submit Comment
-          </button>
+          <button className="button">Submit Comment</button>
         </form>
         <DisplayComments items={this.state.items} />
       </div>
