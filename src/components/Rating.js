@@ -22,7 +22,6 @@ class Rating extends Component {
     var stars = [];
     for (var i = 1; i <= 5; i++) {
       var star = "starRatingStar";
-
       if (this.state.rating >= i && this.state.rating != null) {
         star += " isSelected";
       }
