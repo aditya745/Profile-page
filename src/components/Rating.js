@@ -4,14 +4,12 @@ import SignUpForm from "./SignUpForm";
 class Rating extends Component {
   state = {
     rating: 2,
-    tempRating: null,
     showForm: false
   };
   rate = rating => {
     this.setState({
       showForm: true,
-      rating: rating,
-      tempRating: rating
+      rating: rating
     });
   };
 
@@ -22,7 +20,6 @@ class Rating extends Component {
   };
   render() {
     var stars = [];
-
     for (var i = 1; i <= 5; i++) {
       var star = "starRatingStar";
 

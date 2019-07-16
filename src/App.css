@@ -43,7 +43,9 @@
   visibility: hidden;
   width: 100%;
 }
-
+figcaption h3 {
+  text-align: center;
+}
 /* comment*/
 textarea {
   width: 100%;
