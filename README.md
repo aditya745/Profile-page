@@ -2,9 +2,10 @@ This application has been developed to provide the solution of an assignment, wh
 
 Following technologies were used:
 React,
-Css,
+Css- I made one styling file so that it should be easy to see the styles without navgating into many files for this project,
 Css-grid,
 React-avatar,
+google-fonts api for the fonts,
 To make the application as simple as possible I used these technologies so that everyone can understand the code. 
 
 Instructions for installation:
