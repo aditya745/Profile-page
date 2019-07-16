@@ -1,12 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import SignUpForm from "./SignUpForm";
 
-class Rating extends React.Component {
+class Rating extends Component {
   state = {
-    rating: this.props.rating || 2.5,
-    temp_rating: null
+    rating: this.props.rating || 2,
+    temp_rating: null,
+    showForm: false
   };
   rate = rating => {
     this.setState({
+      showForm: true,
       rating: rating,
       temp_rating: rating
     });
@@ -18,10 +21,17 @@ class Rating extends React.Component {
     });
   };
   star_out = () => {
-    this.setState({ rating: this.state.rating });
+    this.setState({
+      rating: this.state.rating,
+      showForm: false
+    });
+  };
+  handleHideForm = () => {
+    this.setState({
+      showForm: false
+    });
   };
   render() {
-    console.log(this.props.rating);
     var stars = [];
 
     for (var i = 1; i <= 5; i++) {
@@ -42,8 +52,15 @@ class Rating extends React.Component {
         </label>
       );
     }
-
-    return <div className="star-rating">{stars}</div>;
+    if (!this.state.showForm) {
+      return <div className="star-rating">{stars}</div>;
+    } else {
+      return (
+        <div>
+          <SignUpForm handleHideForm={this.handleHideForm} />
+        </div>
+      );
+    }
   }
 }
 export default Rating;
