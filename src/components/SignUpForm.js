@@ -77,7 +77,11 @@ class SignUpForm extends Component {
     }
 
     if (typeof fields["password"] !== "undefined") {
-      if (!fields["password"].match(/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/)) {
+      if (
+        !fields["password"].match(
+          /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$^+=!*()@%&]).{8,10}$/g
+        )
+      ) {
         formIsValid = false;
         errors["password"] = "*Please enter secure and strong password.";
       }

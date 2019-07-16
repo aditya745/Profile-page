@@ -28,6 +28,7 @@
 .profileAvatar:hover figcaption {
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
 }
 .profileAvatar figcaption {
   background-color: #fff;

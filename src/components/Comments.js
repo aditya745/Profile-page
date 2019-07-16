@@ -33,6 +33,7 @@ class Comment extends Component {
             value={this.state.term.comment}
             onChange={this.onChange}
             name="comment"
+            required
           />
           <button className="button" disabled={!this.state.term}>
             Submit Comment
