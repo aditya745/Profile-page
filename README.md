@@ -5,6 +5,7 @@ React,
 Css,
 Css-grid,
 React-avatar,
+google-fonts api for the fonts,
 To make the application as simple as possible I used these technologies so that everyone can understand the code. 
 
 Instructions for installation:
