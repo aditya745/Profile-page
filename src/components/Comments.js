@@ -16,11 +16,13 @@ class Comment extends Component {
   };
   onSubmit = event => {
     event.preventDefault();
-    this.setState({
-      items: [...this.state.items, this.state.term],
-      term: " "
-    });
-    event.target.reset();
+    if (this.state.term) {
+      this.setState({
+        term: "",
+        items: [...this.state.items, this.state.term]
+      });
+      event.target.reset();
+    }
   };
 
   render() {
