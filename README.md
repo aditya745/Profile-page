@@ -1,9 +1,11 @@
 This application has been developed to provide the solution of an assignment, which was supposed to be developed with Javascript library called React.
 
 Following technologies were used:
-React
-Css
-Gravtar
+React,
+Css,
+Css-grid,
+React-avatar,
+To make the application as simple as possible I used these technologies so that everyone can understand the code. 
 
 Instructions for installation:
 Download the code.
