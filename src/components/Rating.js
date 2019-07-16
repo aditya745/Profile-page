@@ -3,29 +3,18 @@ import SignUpForm from "./SignUpForm";
 
 class Rating extends Component {
   state = {
-    rating: this.props.rating || 2,
-    temp_rating: null,
+    rating: 2,
+    tempRating: null,
     showForm: false
   };
   rate = rating => {
     this.setState({
       showForm: true,
       rating: rating,
-      temp_rating: rating
+      tempRating: rating
     });
   };
-  star_over = rating => {
-    this.setState({
-      rating: this.state.rating,
-      temp_rating: this.state.temp_rating
-    });
-  };
-  star_out = () => {
-    this.setState({
-      rating: this.state.rating,
-      showForm: false
-    });
-  };
+
   handleHideForm = () => {
     this.setState({
       showForm: false
@@ -35,26 +24,20 @@ class Rating extends Component {
     var stars = [];
 
     for (var i = 1; i <= 5; i++) {
-      var klass = "star-rating__star";
+      var star = "starRatingStar";
 
       if (this.state.rating >= i && this.state.rating != null) {
-        klass += " is-selected";
+        star += " isSelected";
       }
 
       stars.push(
-        <label
-          key={i}
-          className={klass}
-          onClick={this.rate.bind(this, i)}
-          onMouseOver={this.star_over.bind(this, i)}
-          onMouseOut={this.star_out}
-        >
+        <label key={i} className={star} onClick={this.rate.bind(this, i)}>
           ★
         </label>
       );
     }
     if (!this.state.showForm) {
-      return <div className="star-rating">{stars}</div>;
+      return <div className="starRating">{stars}</div>;
     } else {
       return (
         <div>
