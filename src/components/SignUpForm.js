@@ -97,7 +97,7 @@ class SignUpForm extends Component {
     return (
       <div className="form-container">
         <div className="register">
-          <h3>Sign Up</h3>
+          <h3 className="signUpHeading">Sign Up</h3>
           <form
             method="post"
             name="userSignUpForm"
