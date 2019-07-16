@@ -144,7 +144,6 @@ form input {
 }
 .star-rating__star:hover {
   cursor: pointer;
-  color: #f8ce0b;
 }
 .star-rating__star.is-selected {
   color: #ffd700;
