@@ -3,7 +3,9 @@ This application has been developed to provide the solution of an assignment, wh
 Following technologies were used:
 React
 Css
-Gravtar
+Css-grid
+React-avatar
+To make the application as simple as possible I used these technologies so that everyone can understand the code. 
 
 Instructions for installation:
 Download the code.
