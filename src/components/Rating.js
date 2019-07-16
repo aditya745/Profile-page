@@ -43,6 +43,7 @@ class Rating extends Component {
 
       stars.push(
         <label
+          key={i}
           className={klass}
           onClick={this.rate.bind(this, i)}
           onMouseOver={this.star_over.bind(this, i)}
