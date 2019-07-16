@@ -4,11 +4,11 @@ class Comment extends Component {
   state = {
     term: "",
     items: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Fusce elementum sem venenatis, congue risus at, aliquet velit.",
-      "Cras semper turpis vel augue pharetra, in vehicula augue luctus.",
-      "Aenean ut risus condimentum, accumsan felis id, lobortis eros.",
-      "Maecenas et sem ut mauris hendrerit commodo maximus aliquet tortor."
+      "My 37 year old children rates this shot very magical :)",
+      "How do you make this? Photoshop?.",
+      "Nice use of light in this illustration :-)",
+      "Let me take a nap... great colour, anyway.",
+      "This experience has navigated right into my heart."
     ]
   };
   onChange = event => {
