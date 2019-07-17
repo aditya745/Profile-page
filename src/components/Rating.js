@@ -1,10 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import SignUpForm from './SignUpForm'
 
-class Rating extends React.Component {
+class Rating extends Component {
   state = {
     rating: 3,
-
     showForm: false
   }
 
