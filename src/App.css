@@ -136,7 +136,7 @@ form input {
   padding: 0;
   border: 0;
 }
-.star-rating__star {
+.starRatingStar {
   display: inline-block;
   padding: 3px;
   vertical-align: middle;
@@ -145,12 +145,12 @@ form input {
   color: #ababab;
   transition: color 0.2s ease-out;
 }
-.star-rating__star:hover {
+.starRatingStar:hover {
   cursor: pointer;
 }
-.star-rating__star.is-selected {
+.starRatingStar.isSelected {
   color: #ffd700;
 }
-.star-rating__star.is-disabled:hover {
+.starRatingStar.isDisabled:hover {
   cursor: default;
 }
