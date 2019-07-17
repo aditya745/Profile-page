@@ -126,10 +126,17 @@ form input {
 }
 
 /*star rating*/
-.rating {
-  margin-top: 2%;
+.star-rating__checkbox {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
-.starRatingStar {
+.star-rating__star {
   display: inline-block;
   padding: 3px;
   vertical-align: middle;
@@ -138,12 +145,12 @@ form input {
   color: #ababab;
   transition: color 0.2s ease-out;
 }
-.starRatingStar:hover {
+.star-rating__star:hover {
   cursor: pointer;
 }
-.starRatingStar.isSelected {
+.star-rating__star.is-selected {
   color: #ffd700;
 }
-.starRatingStar.isDisabled:hover {
+.star-rating__star.is-disabled:hover {
   cursor: default;
 }
